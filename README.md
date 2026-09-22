@@ -1,27 +1,30 @@
 ![Denoro Automations](banner.png)
 
-## Hi, we're Denoro Automations 👋
+## Hi, I'm Manel — Denoro Automations 👋
 
-We help **online stores** stop doing repetitive work by hand.
+I build automations for **online stores** (Shopify and WooCommerce) so the repetitive work stops being done by hand. Built on n8n (plus Python where it helps), running on your server or on mine.
 
-- 📉 **Competitor price monitoring**: scheduled price and stock tracking for Shopify, WooCommerce and any catalogue with readable prices, with full history and CSV export
-- 🔔 **Instant alerts** by email, Telegram or Slack when a competitor changes a price
-- 📊 **Automated store reports** and catalogue syncs built with n8n
+### What's already built
+| Automation | What it does | Repo |
+|---|---|---|
+| **Competitor price monitor** | Watches competitors' prices and stock and sends one summary by Telegram and email when something changes, with a CSV of prices. Includes a panel where each client pastes the links to watch. | [price-monitor](https://github.com/denoro-automations/price-monitor) |
+| **Weekly store report** | Every Monday at 8:00: sales, orders and average order vs last week, best sellers and stock to reorder, as a PDF by email and Telegram. | [weekly-report](https://github.com/denoro-automations/weekly-report) |
+| **Product copy in bulk** | SEO titles, meta descriptions and HTML descriptions for a whole catalogue, ready to import. Free template engine, or OpenAI with your own key; any figure not in the product data is flagged. | [ecommerce-automations](https://github.com/denoro-automations/ecommerce-automations/tree/main/fichas-producto) |
+| **Supplier stock sync** | Reads the supplier's CSV or XML feed every 4 hours and updates stock, stopping itself if the feed looks broken. Never touches prices. | [ecommerce-automations](https://github.com/denoro-automations/ecommerce-automations/tree/main/stock-proveedor) |
+| **Abandoned carts** | Reminder sequence signed by the store, only to shoppers who opted in, and a running count of what came back. | [ecommerce-automations](https://github.com/denoro-automations/ecommerce-automations/tree/main/carritos) |
+| **Review monitoring** | Same-day alert on new negative reviews (WooCommerce reviews, or public pages whose robots.txt allows it) and a Monday digest. | [ecommerce-automations](https://github.com/denoro-automations/ecommerce-automations/tree/main/resenas) |
+| **Invoices and delivery notes** | Numbered invoices with VAT by rate, a branded PDF to the customer and a CSV ledger. Not Verifactu-certified software. | [ecommerce-automations](https://github.com/denoro-automations/ecommerce-automations/tree/main/facturas) |
 
-### Demo projects
-| Project | What it does |
-|---|---|
-| [price-monitor](https://github.com/denoro-automations/price-monitor) | Python package + n8n workflows: tracks competitor prices and stock, spots who undercuts you, and sends one summary by email and Telegram. Includes a multi-client panel where each store manages its own links. |
-| [weekly-report](https://github.com/denoro-automations/weekly-report) | n8n workflow that emails a weekly sales report every Monday: KPIs against last week, written takeaways, best sellers and stock to reorder, as a PDF. |
+Each one has a demo mode, its own tests, and the n8n workflow generated from reviewable source code.
 
-### How we work
-1. Short written questionnaire about your store
+### How I work
+1. You tell me what you want automated, in writing
 2. Fixed price and delivery date before any work starts
-3. Working automation, clear documentation and a short walkthrough of how to use it
-4. 2 weeks of free fixes, with optional monthly maintenance
+3. Working automation, documentation and a step-by-step explanation of how to use it
+4. Fixes are free for the first 2 weeks after delivery; monthly maintenance is optional
 
-**Tech:** Python · n8n · Docker · Linux · Shopify and WooCommerce APIs · REST APIs
+**Tech:** n8n · Python · Docker · Shopify and WooCommerce APIs · REST APIs
 
-**Site:** https://denoro-automations.github.io/
+**Site, plans and quote request:** https://denoro-automations.github.io/
 
-We only collect public, non-personal data (prices, product details, stock) and respect each site's terms.
+From other websites I only read public data (prices, product details, stock) and respect their robots.txt. Store data such as carts or invoices is handled only on the store's behalf, for the job agreed.
