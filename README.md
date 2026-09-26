@@ -25,6 +25,6 @@ Each one has a demo mode, its own tests, and the n8n workflow generated from rev
 
 **Tech:** n8n · Python · Docker · Shopify and WooCommerce APIs · REST APIs
 
-**Site, plans and quote request:** https://denoro-automations.github.io/
+**Site, plans and quote request:** https://denoroautomations.com/
 
 From other websites I only read public data (prices, product details, stock) and respect their robots.txt. Store data such as carts or invoices is handled only on the store's behalf, for the job agreed.
